@@ -7,25 +7,177 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 	<!-- META tags -->
+	<meta name="description" content="What would you if you could change history?"/>
+	<meta name="keywords" content="overtimers, videogame, indie, rpg"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
-	<!-- CSS -->
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="./favicon192.png" sizes="192x192">
+
+	<!-- MANIFEST for Chrome-->	
+	<meta name="theme-color" content="#ff8000"/> <!-- <M46: specify Android bar color -->
+	<link rel="manifest" href="manifest.json"/> <!-- M39 -->
+	<link rel="icon" sizes="192x192" href="favicon192.png"/> <!-- M31-M38 -->
+	<meta name="mobile-web-app-capable" content="yes"/> <!-- M31-M38/Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff8000"/><!-- Safari -->
+
+	<!-- CSS+JS -->
+	<link type="text/css" rel="stylesheet" href="./overtimers.css" media="all"/>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
-	<style type="text/css"><!--
-		body{
-			font-family:"Josefin Sans", sans-serif;
-			color:#f9fae8;
-			background-color: #1c1616;
-			text-align:center;
-		}
-		img{max-width:60%;}
-		div{margin: 30px auto;}
-	--></style>
+	<script type="text/javascript" src="./overtimers.js"></script>
 </head>
 <body>
-	<div><img src="logo.png" /></div>
-	<div>coming soon</div>
-	<p>TEST</p>
 	
+	<header>
+		<h1>Overtimers</h1>
+		<img src="resources/logo2.png" id="logo" />
+	</header>
+
+	<section id="about"><div class="fw">
+		<div class="separator separator-bottom"></div>
+		<h2><span>What would you do if you could <strong>change history</strong>?</span></h2>
+		<div id="video" class="text-center"><iframe src="https://www.youtube.com/embed/EY3cjBuc3Uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+		<!-- <h2><span><strong>About</strong> the game</span></h2> -->
+		Overtimers is a tactic RPG, with strong old Adventure games and Tabletop RPGs influences, in which a group of modern society misfits get involved without their decision or control in the matter in a cosmic journey through time and alternative realities. In their shoes the players can visit key moments of history and through their actions change them, experiencing alternative versions of our past, our present and our future. Overtimers is strongly narrative, reflexive and unapologetic, allowing to experiment with history and human nature.
+		<hr/>
+		You can play Overtimers alone or cooperatively, with a fast and dynamic gameplay and combat system that allows it. Either way, like in the oldie tabletop rpgs, you need to rely in your team, combining their strengths to remove their weaknesses. Together, alone in a strange environment, the characters have to make sense where they are, or like the old “Doc” liked to say to McFly, “when”.
+		<div id="about-links" class="text-center">
+			<!-- <a href="#" onclick="return false;"><img src="resources/icon_blog.png" />Follow our blog</a> -->
+			<a href="../presskit.zip" onclick="return false;"><img src="resources/icon_blog.png" /> Download presskit</a>
+		</div>
+	</div></section>
+
+	<section id="cast" class="white"><div class="fw">
+		<h2><span>Meet <strong>the cast</strong></span></h2>
+
+		<img id="chara" style="float:left"/>
+		<img id="charb" style="float:right" />
+		<div id="chartext"></div>
+		<div id="char-selector"></div>
+		<div class="hide" id="char0">
+			<h3>Youtube Guerrilla</h3>
+			As the urban dictionary attests, the Tennessee Top Hat is a long underrated hair style that truly exudes power, respect, and most importantly, dignity. He&#39;s confident, he&#39;s awake, he knows the world and how to tame it. He&#39;s sure that his countless hours training with video tutorials will bear fruit when the zombie apocalypse finally comes, or when the government decides that chemtrails are not enough to rob us of our freedom.
+		</div>
+		<div class="hide" id="char1">
+			<h3>Psycho Housewife</h3>
+			A high functioning psychopath that never forgets everyone&#39;s birthday and always offers her homemade cookies with a motherly smile. She never misses her Thursday&#39;s session at the firing range and worriedly advocates that the safest option when an animal crosses your path in the road is to run it through. The hints are there, but no one seems to notice.
+		</div>
+		<div class="hide" id="char2">
+			<h3>Prick Boss</h3>
+			He&#39;s better than you, and never loses an opportunity to remind you. He knows that all the good things that ever happened to him, or around him, or to others for that matter, are thanks to his keen intelligence and instincts. Shit gets loose around him all the time, of course, but that&#39;s only because he&#39;s deemed to be surrounded by incompetents and morons.
+		</div>
+		<div class="hide" id="char3">
+			<h3>Undervalued Assistant</h3>
+			She&#39;s the one that keeps the machine running smoothly, but few acknowledge it and less care about it. She&#39;s underappreciated, overqualified and paternalized. But deep inside, she rejoices in knowing that she&#39;s indispensable, and sometimes wonders if she&#39;s not actually afraid of being anything else than a big fish in a small pond.
+		</div>
+		<br style="clear:both" />
+	</div></section>
+
+	<section id="team"><div class="fw">
+		<div class="separator separator-top"></div>
+		<h2><span>The <strong>team</strong> behind the idea</span></h2>
+		<div class="row team-list">
+			<div class="four columns">
+				<img src="resources/team/victor.jpg" class="team-pic"/>
+				<span class="name">Víctor Moreno</span><span class="role">Technical Director</span>
+				<div class="team-links">
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/alberto.jpg" class="team-pic"/>
+				<span class="name">Alberto Romero</span><span class="role">Creative Director</span>
+				<div class="team-links">
+					<a href="http://www.alberto-romero.net/" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://www.linkedin.com/in/alberto-romero-garc%C3%ADa-48057bb8/" target="_blank"><img src="resources/icon_linkedin.png" /></a>
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/pablo.jpg" class="team-pic"/>
+				<span class="name">Pablo Emmanuel De Leo</span><span class="role">Technical 3D</span>
+				<div class="team-links">
+					<a href="https://www.domestika.org/es/pabloemmanueldeleo/portfolio" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://twitter.com/pabloemmanueldl" target="_blank"><img src="resources/icon_twitter.png" /></a>
+					<a href="https://ar.linkedin.com/in/pabloemmanueldeleo" target="_blank"><img src="resources/icon_linkedin.png" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="row team-list">
+			<div class="four columns">
+				<img src="resources/team/andrea.jpg" class="team-pic"/>
+				<span class="name">Andrea Lazkanotegi</span><span class="role">3D Artist</span>
+				<div class="team-links">
+					<a href="http://andrealg94.wixsite.com/andrea3d" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://www.linkedin.com/in/andrea3d/" target="_blank"><img src="resources/icon_linkedin.png" /></a>
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/laura.jpg" class="team-pic"/>
+				<span class="name">Laura Collado</span><span class="role">3D Artist</span>
+				<div class="team-links">
+					<a href="https://www.artstation.com/lauracollado" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://www.facebook.com/Lacooy" target="_blank"><img src="resources/icon_facebook.png" /></a>
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/alejandro.jpg" class="team-pic"/>
+				<span class="name">Alejandro Gabriel Salinas</span><span class="role">3D Animator</span>
+				<div class="team-links">
+					<a href="http://alegabo.wixsite.com/miportfolio" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="row team-list">
+			<div class="four columns">
+				<img src="resources/team/eduardo.jpg" class="team-pic"/>
+				<span class="name">Eduardo Suarez</span><span class="role">2D Artist</span>
+				<div class="team-links">
+					<a href="https://www.artstation.com/edusuarez" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/josep.jpg" class="team-pic"/>
+				<span class="name">Josep Pérez</span><span class="role">2D Artist</span>
+				<div class="team-links">
+					<a href="https://www.artstation.com/jperez" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://www.linkedin.com/in/josepperezpardo/" target="_blank"><img src="resources/icon_linkedin.png" /></a>
+				</div>
+			</div>
+			<div class="four columns">
+				<img src="resources/team/nacho.jpg" class="team-pic"/>
+				<span class="name">Ignacio Jesús Rivero</span><span class="role">Designer</span>
+				<div class="team-links">
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="row team-list" style="max-width:50%;margin:0 auto;">
+			<div class="twelve columns">
+				Collaborators
+			</div>
+			<div class="six columns">
+				<img src="resources/team/collaborators/david.jpg" class="team-pic"/>
+				<span class="name">David Güell</span><span class="role">2D Artist</span>
+				<div class="team-links">
+					<a href="http://davidguell.com/" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+					<a href="https://www.facebook.com/travidcruel/" target="_blank"><img src="resources/icon_facebook.png" /></a>
+				</div>
+			</div>
+			<div class="six columns">
+				<img src="resources/team/collaborators/laura.jpg" class="team-pic"/>
+				<span class="name">Laura Usón</span><span class="role">3D Artist</span>
+				<div class="team-links">
+					<a href="https://www.artstation.com/lauusdol" target="_blank"><img src="resources/icon_portfolio.png" /></a>
+				</div>
+			</div>
+		</div>
+	</div></section>
+
+	<footer class="text-center">
+		A videogame by<br/><img src="resources/zinkmediastudio.png"><br/>
+		<br/><br/>
+		&copy; 2016-2018 <a href="../">Zink Media Studio</a><br/>
+		<!-- <small>Copyright text placeholder</small> -->
+	</footer>
 </body>
 </html>
