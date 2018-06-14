@@ -23,6 +23,13 @@
 .text-center{text-align:center}
 .text-justify{text-align:justify}
 
+.no-select{
+	-moz-user-select:none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none
+}
 
 /* LAZY IMAGE LOADING */
 .lazy{transition:opacity 2s;opacity:0}
@@ -56,9 +63,9 @@ h1{display:none}
 
 
 header{
-	background-image:url(resources/header.jpg);
+	background-image:url(resources/header_lq.jpg);
 	background-size:cover;
-	background-position:center;
+	background-position:center 0%;
 	height:560px;
 	position:relative;
 }
@@ -231,6 +238,14 @@ section.white{
 }
 
 
+#cast-bar{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:6px;
+	background-color:#0285ff;
+	width:0%;
+}
 #cast img{max-height:400px}
 #cast img, #chartext{
 	transition: all .3s;
@@ -245,18 +260,23 @@ section.white{
 }
 #chara{float:left}
 #charb{float:right}
-#char-selector{text-align:center}
+#char-selector{
+	text-align:center;
+	position:absolute;
+	bottom:40px;
+	left:0;
+	width:100%;
+}
 #char-selector div{
 	background-color:#ccc;
 	display:inline-block;
-	width:30px;
-	height:8px;
-	margin-right:2px;
+	width:12px;
+	height:12px;
+	margin:0 6px;
+	border-radius:15px;
 }
 #char-selector div.selected{background-color:#0285ff}
 #char-selector div:hover{cursor:pointer}
-#char-selector div:first-child{border-radius: 5px 0 0 5px}
-#char-selector div:last-child{border-radius: 0 5px 5px 0}
 
 
 h2{
@@ -372,6 +392,9 @@ footer a:hover{
 	.fw{width:auto;max-width:100%}
 	.team-list{font-size:90%}
 	.team-pic{width:64px}
+	
+	#cast{padding-bottom:40px}
+	#char-selector{bottom:20px}
 }
 @media only screen and (max-width:641px){
 	#video iframe,#screenshots,#screenshots li{width:410px; height:230px}
